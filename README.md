@@ -1,25 +1,20 @@
-# Parcer or web-scrapper:
+**CURRENCY PARCER v.1.0**
 
-Cкрипт пишет в файл ссылку на объявление, контактный телефон, цену и 
-описание. Затем этот файл сортируется по цене аренды, и на выходе выбираются
-выбрать самые дешёвые квартиры.
 
-## Подключаемы библиотеки:
-- requests для работы с сетевыми запросами (для получения кода сайта, 
-регистрации, авторизации)
-- BeautifulSoup понадобится для разбора и выдергивания информации из 
-  HTML-кода сайта, который мы получили с помощью requests.
+IMPORTANT: Do NOT USE this program for any commercial implementition as the 
+data indicated here may be irrelevant due to inner settings of the 
+specific site used for scrapping. This site has its own API for such cases.
 
-## Для изучения:
+# Main idea of the program:
+A very simple parcer for currency rates of cryptocurrency.
 
-HTTP-запрос – из чего он состоит; 
-как работать с GET, POST, PUT, DELETE-запросами;
-чем они отличаются;
-как формировать заголовки запросов
-Предстоит покопаться со статус-кодами, URL-адресами, схемами авторизации, сессиями, редиректами, прокси и куки-файлами.
-познакомиться с форматом JSON и вникнуть в HTML/CSS-код, семантику и DOM-модель веб-страницы
+- Finds site by URL = https://tradingeconomics.com/crypto.
+- Gathers information on different cryptocurrency's rates.
+- Sorts information by a Special value.
+- Saves in .csv.
 
-## Дополнительно:
-
-подключить базу данных, 
-многопоточное выполнение
+# Modules used:
+bs4 (BeautifulSoup)
+requests
+re
+pandas
